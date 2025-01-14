@@ -1,0 +1,46 @@
+<!-- <body> -->
+
+<h1><b>Category Data</b></h1>
+
+<div class="row">
+  <div class="column">
+    <p *ngIf="categoryNotFound">The category was not found!</p>
+    <form *ngIf="!categoryNotFound" [formGroup]="addCategoryForm" (ngSubmit)="onSubmit()">
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Name: </mat-label>
+          <input
+            matInput
+            placeholder="Name"
+            type="text"
+            formControlName="name"
+          />
+          <mat-error *ngIf="hasError('name', 'required')"
+            >The name is required</mat-error
+          >
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Parent Category </mat-label>
+          <input
+            matInput
+            placeholder="Parent Category"
+            type="text"
+            formControlName="parentCategory"
+          />
+          <mat-error *ngIf="hasError('parentCategory', 'required')"
+            >The parent category is required</mat-error
+          >
+        </mat-form-field>
+    </p>
+      
+      <button mat-raised-button type="submit" [disabled]="!addCategoryForm.valid">
+        Submit
+      </button>
+    </form>
+  </div>
+ 
+</div>
+
+<!-- </body> -->

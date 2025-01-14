@@ -1,0 +1,74 @@
+
+<!-- <body> -->
+<h1><b>User Data</b></h1>
+
+<div class="row">
+  <div class="column">
+    <p *ngIf="userNotFound">The user was not found!</p>
+    <form *ngIf="!userNotFound" [formGroup]="addUserForm" (ngSubmit)="onSubmit()">
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Firstname: </mat-label>
+          <input
+            matInput
+            placeholder="Firstname"
+            type="text"
+            formControlName="firstName"
+          />
+          <mat-error *ngIf="hasError('firstName', 'required')"
+            >The firstname is required</mat-error
+          >
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Lastname: </mat-label>
+          <input
+            matInput
+            placeholder="Lastname"
+            type="text"
+            formControlName="lastName"
+          />
+          <mat-error *ngIf="hasError('lastName', 'required')"
+            >The lastname is required</mat-error
+          >
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Phone number: </mat-label>
+          <input
+            matInput
+            placeholder="PhoneNumber"
+            type="text"
+            formControlName="phoneNumber"
+          />
+          <mat-error *ngIf="hasError('phoneNumber', 'required')"
+            >The phone number field is required</mat-error
+          >
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Email: </mat-label>
+          <input
+            matInput
+            placeholder="Email"
+            type="text"
+            formControlName="email"
+          />
+          <mat-error *ngIf="hasError('email', 'required')"
+            >The email is required</mat-error
+          >
+        </mat-form-field>
+      </p>
+
+      <button mat-raised-button type="submit" [disabled]="!addUserForm.valid">
+        SUBMIT
+      </button>
+    </form>
+  </div>
+
+</div>
+<!-- </body> -->
+

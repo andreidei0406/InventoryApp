@@ -1,0 +1,65 @@
+
+table{
+    width: 100%;
+    background-color: rgb(228, 228, 234);
+}
+th {
+    color:black;
+    border-color: rgb(106, 109, 185);
+
+  }
+
+  tr {
+    color: coral;
+
+  }
+button {
+    background-color: rgb(106, 109, 185);
+    text-align: center;
+    text-decoration: none;
+    padding:10px 10px 10px 10px;
+    border-color: rgb(36, 39, 139);
+    font-size: 150%;
+    color: white;
+    display: inside;
+    position:absolute; 
+    width: 16.5%;
+    left: 41.75%; 
+    bottom: auto;
+
+}
+
+
+button:hover, button:active{
+    background-color: cadetblue;
+}
+
+.but {
+    color:  rgb(106, 109, 185);
+    border: 20%;
+    border-color: rgb(106, 109, 185);
+    background-color: rgb(243, 243, 243);
+}
+a, a:link, a:visited{
+    background-color: rgb(228, 228, 234);
+}
+
+.mat-column-firstname{
+    width: 300px;
+    height:57px
+}
+
+.mat-column-lastname{
+    width: 300px;
+    height:57px
+}
+
+.mat-column-phoneNumber{
+    width: 300px;
+    height:57px
+}
+
+.mat-column-email{
+    width: 300px;
+    height:57px
+}

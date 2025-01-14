@@ -1,0 +1,53 @@
+# Compiled output
+dist/
+out-tsc/
+build/
+
+# Node.js modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Angular files
+.angular/
+.angular-cache/
+
+# IDEs and Editors
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.vscode/
+.vscode-test/
+
+# Coverage files
+coverage/
+
+# Temp files
+tmp/
+temp/
+
+# Compiled TypeScript
+*.js
+*.js.map
+
+# Environment files
+src/environments/environment*.ts
+env*.ts
+
+# Miscellaneous
+*.log
+*.gz
+*.zip
+*.bak
+*.old
+*.orig

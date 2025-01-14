@@ -1,0 +1,45 @@
+h1{
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+
+
+/* body {
+    width: 100%;
+    margin: 3% 10%;
+ } */
+ 
+ div{
+    display: grid;
+    grid-template-columns: 140px 200px;
+    grid-template-areas: "theText theInput";
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+
+label{
+    grid-area:theText;
+}
+
+input, textarea{
+    grid-area:theInput
+}
+
+.row{
+    display: flex;
+}
+
+.column{
+    flex: 50%;
+    padding:10px;
+}
+
+.centered{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-bottom: -128px;
+    margin-left: -128px;
+}
